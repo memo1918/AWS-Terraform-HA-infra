@@ -27,6 +27,7 @@ The Application Load Balancer equaliy distributes the incoming traffic to health
 *  **Security Groups:**  Helps us to manage, restrict and secure our networks.
 
 # ⚙️ Getting Started
+## Prerequisites
 ### AWS Account
 To be able to deploy your infrastructure to the AWS, [here](aws.amazon.com/resources/create-account/) you can find all the information to setup an account. I would also recommend that you visit the [AWS Free Tier](https://aws.amazon.com/free/) page to learn more about limits and how to avoid unexpected bills (setting a budget and regularly checking AWS Bills and Cost Management).
 
@@ -76,3 +77,6 @@ export AWS_SECRET_ACCESS_KEY="my-secret-key"
 export AWS_REGION="us-west-2"
 ```
 Please change the fields accordint to your credentials. You can find more information about how to generate access key on [here](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html).
+
+## Deployment
+
