@@ -4,7 +4,8 @@ Deploy a Scalable and Highly Available Architecture on AWS with Terraform
 ## 🌟 Project Overview
 The purpose of this project is to contribute to the community by making highly available and scalable infrastructure code available for everyone to use and learn from. Components used in this architecture are included in the AWS free tier.
 
-![AWSsimplearch drawio](https://github.com/user-attachments/assets/b882b767-98ab-46be-85ce-2b1ea018e96d)
+<img src="https://github.com/user-attachments/assets/b882b767-98ab-46be-85ce-2b1ea018e96d" width="500">
+
 
 
 ## 🏗️ Architecture Highlights
