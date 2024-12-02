@@ -31,7 +31,7 @@ The Application Load Balancer equaliy distributes the incoming traffic to health
 To be able to deploy your infrastructure to the AWS, [here](aws.amazon.com/resources/create-account/) you can find all the information to setup an account. I would also recommend that you visit the [AWS Free Tier](https://aws.amazon.com/free/) page to learn more about limits and how to avoid unexpected bills (setting a budget and regularly checking AWS Bills and Cost Management).
 
 ### AWS CLI
-AWS CLI is a command line interface to control you AWS services. You can find offical documentation (here)[https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html] or simply to just install follow here:
+AWS CLI is a command line interface to control you AWS services. You can find offical documentation [here](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) or simply to just install follow here:
 
 This installation guid is for Linux. If you have another operating system, please refer to the link above.
 ```Bash
