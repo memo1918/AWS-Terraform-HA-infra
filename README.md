@@ -3,7 +3,7 @@ Deploy a Scalable and Highly Available Architecture on AWS with Terraform
 
 [Project Overview](##project-overview)
 [Architecture Highlights](##architecture-highlights)
-[Techincal Details](##techincald-details)
+[Techincal Details](##🛠️-techincald-details)
 [Getting Started](#getting-started)
 [Deployment](##deployment)
 
