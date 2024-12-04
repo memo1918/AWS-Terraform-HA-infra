@@ -1,6 +1,9 @@
 # 🚀 AWS-Terraform-HA-infra
 Deploy a Scalable and Highly Available Architecture on AWS with Terraform
 
+[Project Overview](##project-overview)  
+
+
 ## 🌟 Project Overview
 The purpose of this project is to contribute to the community by making highly available and scalable infrastructure code available for everyone to use and learn from. Components used in this architecture are included in the AWS free tier.
 
@@ -25,6 +28,73 @@ The Application Load Balancer equaliy distributes the incoming traffic to health
 *  **ALB:**  Application Load Balancer for distributing the load
 *  **NAT Instances:**  They are bridges between private subnets to the internet.
 *  **Security Groups:**  Helps us to manage, restrict and secure our networks.
+
+### File structure and modules
+```
+├── modules                      
+│   ├── autoScaling.tf
+│   ├── ec2Template.tf
+│   ├── efs.tf
+│   ├── IAMroles.tf
+│   ├── NATinstances.tf
+│   ├── routing.tf
+│   ├── secGroup.tf
+│   ├── vpc.tf     
+│   └── variables.tf
+├── initSetup.tfpl
+└── main.tf
+```
+**main.tf:**  
+This is the main entry point for the Terraform configuration.  
+- Specifies the required providers and their versions.  
+- Defines the AWS provider configuration.  
+- Includes the `allmodules` module, which sources all other modules.  
+
+**variables.tf:**  
+Defines input variables for the Terraform configuration.  
+- Variables for AMI ID, instance type, VPC ID, subnet IDs, etc.  
+
+**vpc.tf:**  
+Manages the VPC and related networking components.  
+- VPC, subnets, internet gateway, route tables, and route table associations.  
+
+**secGroup.tf:**  
+Manages security groups for the infrastructure.  
+- Security groups for the production environment and load balancer.  
+
+**ec2Template.tf:**  
+Defines the EC2 launch template for the Auto Scaling group.  
+- Launch template with instance configuration, block device mappings, and user data.  
+
+**autoScaling.tf:**  
+Manages the Auto Scaling group and related policies.  
+- Auto Scaling group, scaling policies, and CloudWatch alarms.  
+
+**loadBalancer.tf:**  
+Manages the load balancer and related components.  
+- Application load balancer, target groups, and listeners.  
+
+**efs.tf:**  
+Manages the Elastic File System (EFS) and related components.  
+- EFS file system and mount targets.  
+
+**IAMroles.tf:**  
+Manages IAM roles and instance profiles.  
+- IAM roles, policies, and instance profiles for EC2 instances.  
+
+**NATinstances.tf:**  
+Manages NAT instances for the VPC.  
+- NAT instances and related security groups.  
+
+**routing.tf:**  
+Manages routing configurations for the VPC.  
+- Route tables and route table associations.  
+
+**initSetup.tftpl:**  
+Template file for EC2 instance user data.  
+- Shell script to initialize the EC2 instance, including Docker installation and EFS mounting.
+
+
 
 # ⚙️ Getting Started
 ## Prerequisites
