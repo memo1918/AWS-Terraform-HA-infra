@@ -1,13 +1,6 @@
 # 🚀 AWS-Terraform-HA-infra
 Deploy a Scalable and Highly Available Architecture on AWS with Terraform
 
-[Project Overview](##project-overview)
-[Architecture Highlights](##architecture-highlights)
-[Techincal Details](##🛠️-techincald-details)
-[Getting Started](#getting-started)
-[Deployment](##deployment)
-
-
 ## 🌟 Project Overview
 The purpose of this project is to contribute to the community by making highly available and scalable infrastructure code available for everyone to use and learn from. Components used in this architecture are included in the AWS free tier.
 
@@ -153,4 +146,24 @@ export AWS_REGION="us-west-2"
 Please change the fields accordint to your credentials. You can find more information about how to generate access key on [here](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html).
 
 ## Deployment
+Clone the repository
+```bash
+git clone https://github.com/memo1918/AWS-Terraform-HA-infra.git
+cd AWS-Terraform-HA-infra
+```
+You can do the neccessary changes to the initSetup.tftpl file or to the variables.tf unde modules directory.
+
+After changes, initiate the terraform
+```bash
+terraform init
+```
+Before applying, you can validate and plan the project.
+```bash
+terraform validate
+terraform plan
+```
+If everyhing looks good, we are ready to deploy:
+```bash
+terraform apply
+```
 
