@@ -1,7 +1,11 @@
 # 🚀 AWS-Terraform-HA-infra
 Deploy a Scalable and Highly Available Architecture on AWS with Terraform
 
-[Project Overview](##project-overview)  
+[Project Overview](##project-overview)
+[Architecture Highlights](##architecture-highlights)
+[Techincal Details](##techincald-details)
+[Getting Started](#getting-started)
+[Deployment](##deployment)
 
 
 ## 🌟 Project Overview
